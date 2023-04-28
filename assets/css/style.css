@@ -1,3 +1,45 @@
- * {
-     background-image: radial-gradient(circle, #e68df0 0%, #12d2f8 100%);
+ .page-container {
+     background-image: linear-gradient(45deg, #e68df0 0%, #12d2f8 100%);
+ }
+
+ #welcome {
+     text-align: center;
+     font-size: 80px;
+     background-color: aqua;
+ }
+
+ .categories {
+     text-align: center;
+     padding: 5px;
+     /* border: 5px solid green;*/
+ }
+
+ .btn-topic {
+     padding: 1.2em;
+     font-size: 3rem;
+     margin-inline: 0.8rem;
+ }
+
+
+ #game-area {
+     text-align: center;
+     /*border: 5px solid rgb(5, 5, 117);*/
+
+ }
+
+ .question {
+     padding: 1em;
+     font-size: 50px;
+ }
+
+ .btn-answer {
+     padding: 1rem;
+     font-size: 2rem;
+     margin-inline: 0.7rem;
+ }
+
+ /* this piece of code was taken from the love maths project*/
+ .scores {
+     display: inline-block;
+     padding: 25px;
  }

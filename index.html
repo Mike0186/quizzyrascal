@@ -9,25 +9,27 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="page-container">
     <div id="welcome">
-        <h1 class="title"> ! ?The quizzy Rascals ? !</h1>
+        <h1 class="title"> ????Quizzy Rascal????</h1>
     </div>
     <div class="categories">
-        <button id="topcic1">Cat1</button>
-        <button id="topcic2">Cat2</button>
-        <button id="topcic3">Cat3</button>
-        <button id="topcic4">Cat4</button>
+        <button class="btn-topic" id="topcic1">General Knowledge</button>
+        <button class="btn-topic" id="topcic2">Movies & TV</button>
+        <button class="btn-topic" id="topcic3">History</button>
+        <button class="btn-topic" id="topcic4">Sports</button>
     </div>
     <div id="game-area">
-        <div id="question-area"> this is where the question will be?</div>
+        <div class="question" id="question-area">Question will load in this space here</div>
         <div id="answer-buttons">
-            <button id="answera"> Answer A</button>
-            <button id="answerb"> Answer B</button>
-            <button id="answerc"> Answer C</button>
-            <button id="answerd"> Answer D</button>
+            <button class="btn-answer" id="answera">Answer A</button>
+            <button class="btn-answer" id="answerb">Answer B</button>
+            <button class="btn-answer" id="answerc">Answer C</button>
+            <button class="btn-answer" id="answerd">Answer D</button>
         </div>
     </div>
+
+    <!-- This piece of code was cited in the love maths project-->
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
