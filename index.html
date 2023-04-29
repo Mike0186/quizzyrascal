@@ -10,24 +10,27 @@
 </head>
 
 <body class="page-container">
-    <div id="welcome">
+    <section id="welcome">
         <h1 class="title"> ????Quizzy Rascal????</h1>
-    </div>
+       
+    </section>
+     <!-- quiz categories-->
     <div class="categories">
-        <button class="btn-topic" id="topcic1">General Knowledge</button>
-        <button class="btn-topic" id="topcic2">Movies & TV</button>
-        <button class="btn-topic" id="topcic3">History</button>
-        <button class="btn-topic" id="topcic4">Sports</button>
+        <button class="btn-topic"  onclick="startGame(generalk)" id="topcic1">General Knowledge</button>
+        <button class="btn-topic" onclick="startGame(movies)" id="topcic2">Movies & TV</button>
+        <button class="btn-topic" onclick="startGame(history)" id="topcic3">History</button>
+        <button class="btn-topic" onclick="startGame(sports)" id="topcic4">Sports</button>
     </div>
-    <div id="game-area">
-        <div class="question" id="question-area">Question will load in this space here</div>
+    <!-- Game area -->
+    <section id="game-area">
+        <div class="question-area" id="questions">Question will load in this space here</div>
         <div id="answer-buttons">
             <button class="btn-answer" id="answera">Answer A</button>
             <button class="btn-answer" id="answerb">Answer B</button>
             <button class="btn-answer" id="answerc">Answer C</button>
             <button class="btn-answer" id="answerd">Answer D</button>
         </div>
-    </div>
+    </section>
 
     <!-- This piece of code was cited in the love maths project-->
     <div class="score-area">
@@ -38,5 +41,6 @@
 
 </body>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/questions"></script>
 
 </html>
