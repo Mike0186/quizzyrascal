@@ -12,23 +12,23 @@
 <body class="page-container">
     <section id="welcome">
         <h1 class="title"> ????Quizzy Rascal????</h1>
-       
+
     </section>
-     <!-- quiz categories-->
+    <!-- quiz categories-->
     <div class="categories">
-        <button class="btn-topic"  onclick="startGame(generalk)" id="topcic1">General Knowledge</button>
-        <button class="btn-topic" onclick="startGame(movies)" id="topcic2">Movies & TV</button>
-        <button class="btn-topic" onclick="startGame(history)" id="topcic3">History</button>
-        <button class="btn-topic" onclick="startGame(sports)" id="topcic4">Sports</button>
+        <button class="btn-topic" onclick="startGame(generalk)" id="generalk">General Knowledge</button>
+        <button class="btn-topic" onclick="startGame(movies)" id="movies">Movies & TV</button>
+        <button class="btn-topic" onclick="startGame(history)" id="history">History</button>
+        <button class="btn-topic" onclick="startGame(sports)" id="sports">Sports</button>
     </div>
     <!-- Game area -->
     <section id="game-area">
-        <div class="question-area" id="questions">Question will load in this space here</div>
+        <div class="question-area" id="quiz-question">Question will load in this space here</div>
         <div id="answer-buttons">
-            <button class="btn-answer" id="answera">Answer A</button>
-            <button class="btn-answer" id="answerb">Answer B</button>
-            <button class="btn-answer" id="answerc">Answer C</button>
-            <button class="btn-answer" id="answerd">Answer D</button>
+            <button class="btn-answer" onclick="checkAnswer(this)"; id="answera">Answer A</button>
+            <button class="btn-answer" onclick="checkAnswer(this)"id="answerb">Answer B</button>
+            <button class="btn-answer" onclick="checkAnswer(this)"id="answerc">Answer C</button>
+            <button class="btn-answer" onclick="checkAnswer(this)"id="answerd">Answer D</button>
         </div>
     </section>
 
@@ -40,7 +40,8 @@
 
 
 </body>
+<script src="assets/js/questions.js"></script>
 <script src="assets/js/script.js"></script>
-<script src="assets/js/questions"></script>
+
 
 </html>
