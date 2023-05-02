@@ -24,13 +24,15 @@ let movies = [
         "question": "What flavor of Pop-Tarts does Buddy the Elf use in his spaghetti in Elf?",
         "choices": ["chocolate", "strawberry", "Blueberry", "Apple"],
         "correct": "chocolate"
-    }];
+    },
+
+];
 
 /*
 let history = [
 
 {
-    "question":
+    "question": 
     "choices":
     "correct":
 },
