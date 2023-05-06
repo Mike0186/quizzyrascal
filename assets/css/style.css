@@ -7,75 +7,98 @@
  }
 
  .container {
-     background: #000000;
+     background-image: url(../images/background.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+     position: relative;
  }
 
- #welcome {
+ #cats {
      text-align: center;
+     font-size: 5vw;
+
+ }
+
+ #game {
+     display: none;
+     position: absolute;
+     top: 10%;
+     text-align: center;
+     width: 100%;
+
+ }
+
+ .finish {
      font-size: 5vw;
  }
 
- /* this piece of code was cited on https: //redstapler.co/realistic-css-neon-text-effect-tutorial/*/
-
+ /* The text shading code was cited on Red Stapler*/
  h1 {
      font-family: 'tilt neon';
-     color: #008000;
+     text-align: center;
+     color: #cf0be9;
      text-shadow:
-         .1vw 0vw .25vw #91fa7c,
-         .2vw 0vw .25vw #aef592,
-         .4vw 0vw .25vw #a8fc71,
-         .1vw 0vw 0vw #77f053,
-         .2vw 0vw 0vw #77f053,
-         .4vw 0vw 0vw #77f053,
-         .1vw 0vw .1vw #77f053,
-         .2vw 0vw .1vw #77f053,
-         .4vw 0vw .1vw #77f053,
-         .1vw 0vw 2vw #77f053,
-         .2vw 0vw 2vw #77f053,
-         .4vw 0vw 2vw #77f053,
+         .1vw 0vw .25vw #e57cfa,
+         .2vw 0vw .25vw #ea92f5,
+         .4vw 0vw .25vw #e071fc,
+         .1vw 0vw 0vw #f053f0,
+         .2vw 0vw 0vw #f053f0,
+         .4vw 0vw 0vw #f053f0,
+         .1vw 0vw .1vw #f053f0,
+         .2vw 0vw .1vw #f053f0,
+         .4vw 0vw .1vw #f053f0,
+         .1vw 0vw 2vw #f053f0,
+         .2vw 0vw 2vw #f053f0,
+         .4vw 0vw 2vw #f053f0,
 
-         .1vw 0vw 1vw #13e90b,
-         .2vw 0vw 1vw #13e90b,
-         .4vw 0vw 5vw #13e90b,
-         .1vw 0vw 5vw #13e90b,
-         .2vw 0vw 20vw #13e90b,
-         .4vw 0vw 10vw #13e90b,
-         .1vw 0vw 10vw #13e90b,
-         .2vw 0vw 30vw #13e90b,
-         .4vw 0vw 10vw #13e90b;
+         .1vw 0vw 1vw #cf0be9,
+         .2vw 0vw 1vw #cf0be9,
+         .4vw 0vw 5vw #cf0be9,
+         .1vw 0vw 5vw #cf0be9,
+         .2vw 0vw 20vw #cf0be9,
+         .4vw 0vw 10vw #cf0be9,
+         .1vw 0vw 10vw #cf0be9,
+         .2vw 0vw 30vw #cf0be9,
+         .4vw 0vw 10vw #cf0be9;
 
  }
 
  .intro {
 
-     font-family: 'titl neon';
-     color: #13e90b;
-     font-size: 20px;
+     font-family: 'rum raisin';
+     color: #e90bd7;
+     font-size: 40px;
  }
 
  .categories {
      text-align: center;
  }
 
+
+
  .btn-topic {
      padding: 30px;
      font-size: 2rem;
+     font-family: 'titl neon';
+     color: whitesmoke;
      margin-inline: 0.8rem;
-     background-color: #64adc5;
+     background-color: #d13dcf80;
      display: inline-block;
      margin: 10px 20px;
-     box-shadow: 5px 10px;
+     box-shadow: 5px 5px #64a2dd;
      border-radius: 50%;
  }
 
  .btn-topic:hover {
-     background: rgb(243, 119, 237);
+     background: #e35ae5;
      box-shadow: none;
  }
 
  .btn-answer:hover {
-     background: aqua;
-     box-shadow: green;
+     background: #64a2dd;
      border-radius: 10%;
 
  }
@@ -86,6 +109,27 @@
 
  }
 
+ #game-over {
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     width: 100%;
+ }
+
+ .over {
+     font-family: 'rum raisin';
+     color: #efefef;
+     font-size: 45px;
+     text-align: center;
+     background-color: #6565a5bd;
+     position: absolute;
+     top: 25%;
+     left: 20%;
+     margin: auto;
+
+ }
+
+
  .question-area {
      padding: 1em;
      font-size: 2.5em;
@@ -93,39 +137,25 @@
      font-family: 'rum raisin';
      margin: 25px 50px;
      font-weight: 800;
-     border: .2rem solid green;
-     box-shadow: .1vw 0vw .25vw #91fa7c,
-         .2vw 0vw .25vw #aef592,
-         .4vw 0vw .25vw #a8fc71,
-         .1vw 0vw 0vw #77f053,
-         .2vw 0vw 0vw #77f053,
-         .4vw 0vw 0vw #77f053,
-         .1vw 0vw .1vw #77f053,
-         .2vw 0vw .1vw #77f053,
-         .4vw 0vw .1vw #77f053,
-         .1vw 0vw 2vw #77f053,
-         .2vw 0vw 2vw #77f053,
-         .4vw 0vw 2vw #77f053,
-
-         .1vw 0vw 1vw #13e90b,
-         .2vw 0vw 1vw #13e90b,
-         .4vw 0vw 5vw #13e90b,
-         .1vw 0vw 5vw #13e90b,
-         .2vw 0vw 20vw #13e90b,
-         .4vw 0vw 10vw #13e90b,
-         .1vw 0vw 10vw #13e90b,
-         .2vw 0vw 30vw #13e90b,
-         .4vw 0vw 10vw #13e90b;
+     background-color: #d13dcf80;
+     border-radius: 40%;
+     text-align: center;
  }
+
+
 
  .btn-answer {
      font-size: 1.80rem;
      margin-inline: 0.7rem;
      margin: 10px;
-     background: #64adc5;
+     background: #e35ae5;
      padding: 8px;
      box-shadow: 5px 10px;
      border-radius: 10%;
+ }
+
+ #answer-buttons {
+     text-align: center;
  }
 
 
@@ -133,13 +163,20 @@
  /* this piece of code was taken from the love maths project*/
  .scores {
      display: inline-block;
-     padding: 25px;
+     font-size: 1.80rem;
+     margin-inline: 0.7rem;
+     margin: 10px;
+     padding: 8px;
+     border-radius: 10%;
+     background-color: #07336b;
+     color: #e7aed8;
+     font-family: 'Tilt Neon';
 
  }
 
  .score-area {
-     text-align: center;
+     display: inline-block;
+     padding: 25px;
+
 
  }
-
- @media

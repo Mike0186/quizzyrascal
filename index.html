@@ -4,36 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <Meta name="description" Content="Quick Quiz">
+    <meta name="keywords" content="general Knowledge, sports, history, movies, quiz, questions">
+    <meta name="author" content="Michael Burns">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quizzy Rascal</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="container">
-    <section id="welcome">
+    <section id="cats">
 
-        <h1 class="title">Quiz Night</h1>
-        <p class="intro">Welcome to Quizzy rascal. <br> Please select a category to begin the quiz.</p>
+        <h1 class="title">Quizzy Rascal</h1>
+        <p class="intro">Welcome to Quizzy rascal. <br> Knowledge becomes power only when we put it into some use <br>
+            Put yours to the test by selecting a category below.</p>
 
-    </section>
-    <section>
-        <!-- quiz categories-->
         <div class="categories">
-            <a href="generalknowledge.html" target="_blank"><button class="btn-topic">General Knowledge</button></a>
-            <a href="movies.html" target="_blank"><button class="btn-topic">Movies & TV</button></a>
-            <a href="history.html" target="_blank"><button class="btn-topic">History</button></a>
-            <a href="sports.html" target="_blank"><button class="btn-topic">Sports</button></a>
-
-            <!-- <button class="btn-topic" a href="generalknowledge.html">General Knowledge</button>-->
-            <!--<button class="btn-topic" onclick="startGame(movies)" id="movies">Movies & TV</button>
-        <button class="btn-topic" onclick="startGame(history)" id="history">History</button>
-        <button class="btn-topic" onclick="startGame(sports)" id="sports">Sports</button>-->
+            <button class="btn-topic" onclick="startGame(generalk); hide()">General Knowledge</button>
+            <button class="btn-topic" onclick="startGame(movies); hide()">Movies & TV</button>
+            <button class="btn-topic" onclick="startGame(history); hide()">History</button>
+            <button class="btn-topic" onclick="startGame(sports); hide()">Sports</button>
         </div>
+
     </section>
+
+    <section id="game">
+        <!-- This piece of code was cited in the love maths project-->
+        <div class="score-area">
+            <p class="scores">Correct <span id="score">0</span></p>
+            <p class="scores">Incorrect <span id="incorrect">0</span></p>
+        </div>
+
+        <div class="question-area" id="quiz-question">
+            <h2>Question</h2>
+        </div>
+
+        <div id="answer-buttons">
+            <button class="btn-answer" onclick="checkAnswer(this)">Answer A</button>
+            <button class="btn-answer" onclick="checkAnswer(this)">Answer B</button>
+            <button class="btn-answer" onclick="checkAnswer(this)">Answer C</button>
+            <button class="btn-answer" onclick="checkAnswer(this)">Answer D</button>
+        </div>
+
+
+    </section>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
-<script src="assets/js/questions.js"></script>
-<script src="assets/js/script.js"></script>
+
 
 
 </html>
